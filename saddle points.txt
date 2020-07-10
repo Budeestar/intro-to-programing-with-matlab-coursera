@@ -1,0 +1,12 @@
+function indices = saddle(M)
+[m,n]=size(M);
+a=[];
+for i=1:m
+    for j=1:n
+        if prod(M(i,j)>=M(i,:))==1 && prod(M(i,j)<=M(:,j))==1
+            a=[i,j;a];
+        end
+    end
+end
+indices=a;
+end

@@ -1,0 +1,23 @@
+function too_young=under_age(age,limit)
+
+    if nargin<2
+        limit=21
+        if age<limit
+            too_young=true
+        
+        elseif age>=limit
+            too_young=false
+        else
+            fprintf('invalid\n')
+        end
+    end
+ 
+    if age<limit
+            too_young=true
+    
+    elseif age>=limit
+            too_young=false
+    else
+            fprintf('invalid\n')
+end
+            

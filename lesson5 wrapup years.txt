@@ -1,0 +1,36 @@
+function [valid]=valid_date(year,month,date)
+y=year;m=month;d=date;
+if ~isscalar(y)|| ~isscalar(m) || ~isscalar(d)
+    valid=false;
+    return
+end
+if y>=1 && m==1 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==2 && d>=1 && d<=28 && mod(y,4)~=0 
+    valid=true;
+elseif y>=1 && m==2 && d>=1 && d<=29 && ((mod(y,4)==0 && mod(y,100)~=0 )|| mod(y,400)==0)
+    valid=true;
+elseif y>=1 && m==3 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==4 && d>=1 && d<=30
+    valid=true;
+elseif y>=1 && m==5 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==6 && d>=1 && d<=30
+    valid=true;
+elseif y>=1 && m==7 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==8 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==9 && d>=1 && d<=30
+    valid=true;
+elseif y>=1 && m==10 && d>=1 && d<=31
+    valid=true;
+elseif y>=1 && m==11 && d>=1 && d<=30
+    valid=true;
+elseif y>=1 && m==12 && d>=1 && d<=31
+    valid=true;
+else
+    valid=false;
+end
+end
