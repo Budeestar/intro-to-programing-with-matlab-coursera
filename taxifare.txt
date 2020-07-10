@@ -1,0 +1,6 @@
+function fare=taxi_fare(d,t)
+    d=ceil(d)
+    t=ceil(t)
+    k=ceil(d-1)
+    fare=5+2*k+t*0.25
+end
