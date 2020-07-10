@@ -1,0 +1,9 @@
+Principle_amt=1000;
+
+Rate_of_interest=10;
+
+end_loan=(Principle_amt*Rate_of_interest)/100+Principle_amt;
+
+new_interest=end_loan*Rate_of_interest/100;
+
+debt=end_loan+new_interest
