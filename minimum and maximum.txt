@@ -1,0 +1,8 @@
+function [mmr,mmm]=minimax(A)
+   B = A';
+   k=max(B);
+   l=min(B);
+   mmr=max(B)-min(B);
+   mmm = max(k) - min(l);
+
+end
