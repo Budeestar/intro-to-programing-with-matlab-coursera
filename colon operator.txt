@@ -1,0 +1,2 @@
+odds=linspace(1,99,50)
+evens=linspace(100,2,50)
